@@ -1,0 +1,38 @@
+    /* Start Global Rules */
+    :root{
+      --maincolor:#1E1E1E;
+      --secondarycolor:#793EF5;
+      --mainfont: SpaceGrotesk;
+
+  }
+*{
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* .container{
+  padding: 0px 15px;
+  margin-right: auto;
+  margin-left: auto;  
+} */
+  /* small */
+/* @media (min-width:768px){
+  .container{
+      width: 750px;
+  }
+} */
+  /* Medium */
+/* @media (min-width:992px){
+  .container{
+      width: 970px;
+  }
+} */
+  /* Large */
+/* @media (min-width:1200px){
+  .container{
+      width: 1170px;
+  } */
+
+    /* End Global Rules */
+
+

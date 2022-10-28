@@ -1,0 +1,81 @@
+@import url(../index.css);
+.split-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .Main-section{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Main-paragraph{
+    font-weight: 600;
+    color: var(--maincolor);
+    font-size: 32px;
+    line-height: 24px;
+  }
+  .Main-section-icon{
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    font-size: 20px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 14%;
+    cursor: pointer;
+  }
+  .Main-section button{
+    border-radius: 13%;
+    background-color: var(--secondarycolor);
+    border: 1px solid transparent;
+    margin-bottom: -3px;
+    margin-top: -3px;
+    padding-left: 35px;
+    padding-right: 10px;
+    font-family: var(--mainfont);
+    color: White;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+  }
+
+  .Secondary-content{
+    max-width: 19%;
+  }
+  .Secondary-content p{
+    font-size:14px;
+    font-family: var(--mainfont);
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  }
+  .DuoButtons button{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--mainfont);
+    border: 1px solid transparent;
+    border-radius: 14%;
+    padding: 4px 8px;
+  }
+  .DuoButtons button:last-child{
+    color: var(--maincolor);
+  }
+  .active{
+  color: white;
+  background-color: var(--secondarycolor);
+  }
+.Secondary-dates{
+  position: relative;
+  left: 50%;
+}
+.Secondary-dates svg{
+  color: var(--secondarycolor);
+  font-size: 15px;
+}
+.Secondary-dates p{
+  font-family: var(--mainfont);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+
+}

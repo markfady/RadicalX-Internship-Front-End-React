@@ -1,0 +1,28 @@
+@import url(../index.css);
+.SideBar{
+    width: 229px;
+    height: 950px;
+    position: relative;
+}
+.SideBar-List{
+    list-style: none;
+    gap: 14px;
+    cursor: pointer;
+}
+.SideBar-List li{
+    font-family: var(--mainfont);
+    font-size:  16px;
+    line-height: 24px;
+    color: var(--maincolor);
+    letter-spacing: 0.3px;
+}
+
+.SideBar-creator{
+    font-family: var(--mainfont);
+    color: var(--maincolor);
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: calc(229px - 77px);
+    user-select: none;
+}
