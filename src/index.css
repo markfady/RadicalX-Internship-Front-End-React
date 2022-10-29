@@ -2,8 +2,9 @@
     :root{
       --maincolor:#1E1E1E;
       --secondarycolor:#793EF5;
-      --mainfont: SpaceGrotesk;
-
+      --blackcolor:#2F3031;
+      --mainfont: Space Grotesk;
+      
   }
 *{
   margin: 0;

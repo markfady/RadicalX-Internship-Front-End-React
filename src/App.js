@@ -6,9 +6,7 @@ import InternshipInsights from "./components/InternshipInsights";
 function App() {
   return (
     <div className="App">
-  
-      <InternshipInsights/>
-
+    <InternshipInsights/>   {/* Week 1-2 Task*/}
     </div>
   );
 }
