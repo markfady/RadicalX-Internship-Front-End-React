@@ -1,6 +1,17 @@
-import SideBar from "./SideBar";
+import "./InternshipInsights.css"
 import Split from "react-split";
-import "./InternshipInsights.css";
+
+import SideBar from "./SideBar";
+import InternshipSecondaryDetails from "./InternshipSecondaryDetails";
+function render(){    // This Function to load component (InternshipSecondaryDetails) 5 times in dynamic way rather than repeating code
+                                            //(called on line:71)
+    let amountOfComponents=[0,1,2,3,4];
+    return(
+    Array.from({length: amountOfComponents.length})
+    .map((_, index) => (                            //Map to loop on the array items we can render this component any time now
+            <InternshipSecondaryDetails key={index} />))
+        )
+}
 function InternshipInsights(){
     return (
         <>
@@ -9,9 +20,9 @@ function InternshipInsights(){
           direction="horizontal"
           cursor="col-resize"
           className="split-flex">
-            <SideBar/>              
-        {/* Importing SideBar Part of the page Inside Split tag */}
+            <SideBar/>               {/* Importing SideBar Part of the page Inside Split tag */} 
         <div className="container  mt-5">
+        {/* Start of Insights */}
         <div className="Main-section">
         <p className="Main-paragraph font-weight-bold">Internships</p>
         <i className="fa-solid fa-plus Main-section-icon"></i>
@@ -32,8 +43,34 @@ function InternshipInsights(){
                 <i className="fa-solid fa-calendar-days me-2"></i>
                 <p>Select dates</p>
             </div>
-            <p>Hello</p>
+            <p className="mt-5">Chart Place</p>
         </div>
+        {/* End of Insights*/}
+        {/* Start of Internship Details */}
+        <div className="Secondary-Titles mt-4 ms-5">
+            <div className="Titles">
+                <p className="text-start">Internship Title</p>
+                <div className="Titles-options ps-3">
+                    <i className="fa-solid fa-chevron-down me-5"></i>
+                    <p>Completion Period</p>
+                    <i className="fa-solid fa-chevron-down ms-4"></i>
+                </div>
+                <div className="Titles-options ps-4">
+                    <p className="ms-4">Total Enrolled</p>
+                    <i className="fa-solid fa-chevron-down ms-4"></i>
+                </div>
+                <div className="Titles-options ps-3">
+                    <p className="text-nowrap ">Qualified Candidates</p>
+                    <i className="fa-solid fa-chevron-down  ms-5"></i>
+                </div>
+            </div>
+        </div>
+        {/* End of Internship Details */}
+        {/* Start of Details */}
+        {
+        render()
+        }
+        {/* End of Details */}
         </div>
         </Split>
         </>

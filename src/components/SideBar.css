@@ -21,7 +21,7 @@
     font-family: var(--mainfont);
     color: var(--maincolor);
     position: absolute;
-    bottom: 10%;
+    bottom: -10%;
     text-align: center;
     width: calc(229px - 77px);
     user-select: none;

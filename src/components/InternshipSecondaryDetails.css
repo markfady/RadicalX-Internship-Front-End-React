@@ -1,0 +1,73 @@
+/* Start of Details */
+  .Product-Design{
+    max-width:240px;
+  }
+  .Product-Design h5{
+    font-size: 16px;
+    color: var(--blackcolor);
+  }
+  .Product-Design p {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .Days{
+    padding-left: 120px;
+  }
+  .Days p:first-child{
+font-family: var(--mainfont);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+  }
+  .Days p:last-child{
+    color: #828282;
+    font-family: var(--mainfont);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .Total{
+    padding-left: 150px;
+  }
+  .Total{
+    color: var(--secondarycolor);
+    font-family: var(--mainfont);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+  .BarChart{
+padding-left: 100px;
+}
+.Bar{
+    padding: 3px 3px 3px 27px ; 
+}
+.BarChart .Bar span {
+    display: block;
+    position: relative;
+    background-color: #C4C4C4;
+    height: 100%;
+}
+.special{
+  background-color: var(--secondarycolor) !important;
+}
+.BarChart .Bar .special::before{
+  content: attr(data-progress);
+  position: absolute;
+  top: -113%;
+  right: -102%;
+  background-color: var(--secondarycolor);
+  color: white;
+  padding: 2px;
+  border-radius: 14%
+}
+.Secondary-Details-icons{
+  padding-left: 52px;
+  color: var(--secondarycolor);
+  font-size: 21px;
+  cursor: pointer;
+}

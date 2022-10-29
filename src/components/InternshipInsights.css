@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
   }
+  /* Start of Insights */
   .Main-section{
     display: flex;
     justify-content: space-between;
@@ -71,11 +72,40 @@
 .Secondary-dates svg{
   color: var(--secondarycolor);
   font-size: 15px;
+  cursor: pointer;
 }
 .Secondary-dates p{
   font-family: var(--mainfont);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-
 }
+  /* End of Insights */
+  /* Start of Internship Details */
+.Secondary-Titles{
+  padding-top: 100px;
+}
+.Secondary-Titles p {
+  color: var(--blackcolor);
+  font-size: 14px;
+  font-weight: 500;
+}
+.Titles{
+  position: relative;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill , minmax(249px,1fr));
+}
+.Titles svg{
+  border: 1.5px solid var(--secondarycolor);
+  border-radius: 14%;
+  padding: 2px;
+  color: var(--secondarycolor);
+  font-size: 10px;
+  cursor: pointer;
+}
+.Titles-options{
+  display: flex;
+}
+  /* End of Internship Details */
+  
