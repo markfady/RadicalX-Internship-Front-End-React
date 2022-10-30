@@ -1,4 +1,7 @@
 @import url(../index.css);
+.Sidebar-cont{
+    position: relative;
+}
 .SideBar{
     width: 229px;
     height: 950px;
@@ -21,8 +24,15 @@
     font-family: var(--mainfont);
     color: var(--maincolor);
     position: absolute;
-    bottom: -10%;
+    bottom: -18%;
     text-align: center;
     width: calc(229px - 77px);
     user-select: none;
+}
+.active-sidebar{
+    border: 1px solid #d3c6f1;
+    border-radius: 14%;
+    background-color: #d3c6f1;
+    max-width: 162px;
+
 }
