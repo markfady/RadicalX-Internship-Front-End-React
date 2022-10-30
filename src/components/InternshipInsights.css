@@ -14,17 +14,20 @@
     font-size: 32px;
     line-height: 24px;
   }
+  .Main-section-option{
+    position: relative;
+  }
   .Main-section-icon{
     position: absolute;
-    right: 10%;
-    top: 6%;
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 9px;
     border: 1px solid white;
     color: white;
     border-radius: 14%;
     cursor: pointer;
+    margin-top: 9px;
   }
-  .Main-section button{
+  .Main-section-option button{
     border-radius: 13%;
     background-color: var(--secondarycolor);
     border: 1px solid transparent;
@@ -32,6 +35,8 @@
     margin-top: -3px;
     padding-left: 35px;
     padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     font-family: var(--mainfont);
     color: White;
     font-weight: 400;
@@ -79,6 +84,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  user-select: none;
 }
   /* End of Insights */
   /* Start of Internship Details */
@@ -89,6 +95,7 @@
   color: var(--blackcolor);
   font-size: 14px;
   font-weight: 500;
+  user-select: none;
 }
 .Titles{
   position: relative;

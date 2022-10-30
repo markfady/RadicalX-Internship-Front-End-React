@@ -1,15 +1,15 @@
-import "./InternshipInsights.css"
+import "./InternshipInsights.css";
 import Split from "react-split";
-
 import SideBar from "./SideBar";
 import InternshipSecondaryDetails from "./InternshipSecondaryDetails";
-function render(){    // This Function to load component (InternshipSecondaryDetails) 5 times in dynamic way rather than repeating code
-                                            //(called on line:71)
+
+function render(props){    // This Function to load component (InternshipSecondaryDetails) 5 times in dynamic way rather than repeating code
+                                         //(called on line:71)
     let amountOfComponents=[0,1,2,3,4];
     return(
     Array.from({length: amountOfComponents.length})
-    .map((_, index) => (                            //Map to loop on the array items we can render this component any time now
-            <InternshipSecondaryDetails key={index} />))
+    .map((index) => (                            //Map to loop on the array items we can render this component any time now
+            <InternshipSecondaryDetails key={index}/>))
         )
 }
 function InternshipInsights(){
@@ -24,9 +24,11 @@ function InternshipInsights(){
         <div className="container  mt-5">
         {/* Start of Insights */}
         <div className="Main-section">
-        <p className="Main-paragraph font-weight-bold">Internships</p>
-        <i className="fa-solid fa-plus Main-section-icon"></i>
-        <button>Create New Internship</button>
+            <p className="Main-paragraph font-weight-bold">Internships</p>
+        <div className="Main-section-option">
+            <i className="fa-solid fa-plus Main-section-icon"></i>
+            <button>Create New Internship</button>
+        </div>
         </div>
         <div className="Secondary-section mt-5 ms-5 d-flex">
             <div className="Secondary-content">
@@ -42,9 +44,8 @@ function InternshipInsights(){
             <div className="Secondary-dates d-flex">
                 <i className="fa-solid fa-calendar-days me-2"></i>
                 <p>Select dates</p>
-            </div>
-            <p className="mt-5">Chart Place</p>
-        </div>
+            </div>               
+    </div>
         {/* End of Insights*/}
         {/* Start of Internship Details */}
         <div className="Secondary-Titles mt-4 ms-5">
