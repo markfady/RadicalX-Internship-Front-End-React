@@ -1,0 +1,38 @@
+@import url(../index.css);
+.Sidebar-cont{
+    position: relative;
+}
+.SideBar{
+    width: 229px;
+    height: 950px;
+    position: relative;
+}
+.SideBar-List{
+    list-style: none;
+    gap: 14px;
+    cursor: pointer;
+}
+.SideBar-List li{
+    font-family: var(--mainfont);
+    font-size:  16px;
+    line-height: 24px;
+    color: var(--maincolor);
+    letter-spacing: 0.3px;
+}
+
+.SideBar-creator{
+    font-family: var(--mainfont);
+    color: var(--maincolor);
+    position: absolute;
+    bottom: -18%;
+    text-align: center;
+    width: calc(229px - 77px);
+    user-select: none;
+}
+.active-sidebar{
+    border: 1px solid #d3c6f1;
+    border-radius: 14%;
+    background-color: #d3c6f1;
+    max-width: 162px;
+
+}
