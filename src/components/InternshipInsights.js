@@ -2,8 +2,8 @@ import "./InternshipInsights.css";
 import Split from "react-split";
 import SideBar from "./SideBar";
 import InternshipSecondaryDetails from "./InternshipSecondaryDetails";
-
-function render(props){    // This Function to load component (InternshipSecondaryDetails) 5 times in dynamic way rather than repeating code
+import Shape from "./Shape";
+function render(){    // This Function to load component (InternshipSecondaryDetails) 5 times in dynamic way rather than repeating code
                                          //(called on line:71)
     let amountOfComponents=[0,1,2,3,4];
     return(
@@ -45,6 +45,7 @@ function InternshipInsights(){
                 <i className="fa-solid fa-calendar-days me-2"></i>
                 <p>Select dates</p>
             </div>               
+{} <Shape/> 
     </div>
         {/* End of Insights*/}
         {/* Start of Internship Details */}
