@@ -30,9 +30,9 @@
     user-select: none;
 }
 .active-sidebar{
-    border: 1px solid #d3c6f1;
+    border: 1px solid #ef1cc0;
+    color: var(--secondarycolor) !important;
     border-radius: 14%;
-    background-color: #d3c6f1;
-    max-width: 162px;
-
+    background-color: #f3e1ef;
+    max-width: 162px !important;
 }

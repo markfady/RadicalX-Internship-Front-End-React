@@ -1,8 +1,10 @@
 import "./InternshipInsights.css";
+import { Link } from "react-router-dom";
 import Split from "react-split";
 import SideBar from "./SideBar";
 import InternshipSecondaryDetails from "./InternshipSecondaryDetails";
 import Shape from "./Shape";
+
 function render(){    // This Function to load component (InternshipSecondaryDetails) 5 times in dynamic way rather than repeating code
                                          //(called on line:71)
     let amountOfComponents=[0,1,2,3,4];
@@ -27,7 +29,7 @@ function InternshipInsights(){
             <p className="Main-paragraph font-weight-bold">Internships</p>
         <div className="Main-section-option">
             <i className="fa-solid fa-plus Main-section-icon"></i>
-            <button>Create New Internship</button>
+           <Link to="/CreateNewInternship"> <button>Create New Internship</button> </Link>
         </div>
         </div>
         <div className="Secondary-section mt-5 ms-5 d-flex">

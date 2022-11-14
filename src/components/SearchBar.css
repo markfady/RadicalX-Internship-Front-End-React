@@ -1,0 +1,49 @@
+@import url(../index.css);
+.SearchBar{
+}
+
+.SearchBar .Details .Title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.searchinput{
+    padding: 9px 13px;
+    width: 63%;
+    border: 2px solid darkgray;
+    border-radius: 3%;
+    font-family:var(--mainfont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.SearchBar svg {
+    color: darkgrey;
+}
+#second-icon{
+    position: absolute;
+    margin-left: -29px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.bullets{
+    gap: 14px;
+}
+.bullets-options{
+    user-select: none;
+    border: 1px solid var(--secondarycolor);
+    border-radius: 15%;
+    padding: 0px 15px;
+    background-color: #f3e1ef;
+}
+.bullets-options p{
+    color: var(--secondarycolor) !important ;
+    font-size: 15px;
+    font-weight: 500;
+}
+.bullets-options svg{
+    margin-top: 5px;
+    margin-left: 4px;
+    font-size: 14px;
+}

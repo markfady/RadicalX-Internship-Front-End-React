@@ -1,0 +1,43 @@
+@import url(../index.css);
+#pills-tab{
+    display: flex;
+    position: absolute;
+    left: 24%;
+    top: 21%;
+    flex-direction: column;
+    gap: 73px;
+    z-index: 1;       
+    /* when clicking on the buttons after putting them inside the box the click button is blocked so use zindex to make them clickable in this case */
+}
+ul li button {
+    border: transparent;
+}
+.purple-border{
+    border: 1px solid var(--secondarycolor);
+}
+.change {
+    color: var(--secondarycolor);
+}
+.default{
+    color: darkgrey;
+}
+.nav-item{
+    padding: 0px;
+    margin: 0px;
+}
+.tab-pane{
+     padding-top: 40px;
+     width: 106%;
+     position: absolute;
+     left: 28%;
+     background-color: transparent;
+}
+.tab-pane p {
+    color:black;
+}
+.toogle{
+    border: transparent;
+}
+.toogle button{
+    font-size: 24px;
+}

@@ -1,0 +1,96 @@
+@import url(../index.css);
+ /* Start of Title section */
+ .SecondPage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+ }
+.NewIntern{
+    width: 100%;
+}
+.NewIntern li{
+    list-style: none;
+}
+.NewIntern li:first-child {
+    cursor: pointer;
+}
+.NewIntern li:last-child{
+    cursor:not-allowed;
+}
+.firstli{
+    transform: translate(-3px, 24px);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--mainfont);
+}
+.arrowleft{
+    padding-right:11px;
+    color: var(--secondarycolor);
+}
+.Title{
+    font-weight: 600;
+    transform: translate(0px, 27px);
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    user-select: none;
+}
+.Back , .Back:hover{
+    color: var(--secondarycolor); 
+    text-decoration: none;
+}
+.withBorder{
+    border: 1px solid rgb(133, 207, 236);
+    transform: translate(-22px,13px);
+    background-color:rgb(210, 237, 248) ;
+    color:var(--greycolor) ;
+    font-size: 14px;
+    font-weight:400;
+    padding: 12px 16px;
+}
+.Intro .nav-link{
+    border: 1px solid var(--secondarycolor);
+    transform: translate(-22px,13px);
+    background-color: var(--secondarycolor);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 16px;
+}
+/* End of Title section */
+/* start of progressBar  */
+.progress{
+    border: 1px solid var(--greycolor);
+    padding: 23px 0px;
+}
+.mini{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+.progress li{
+    list-style:none;
+    font-size: 16px;
+    line-height: 4px;
+}
+.progress li:first-child{
+    cursor: pointer;
+}
+.progress li::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    border: 1px solid var(--maincolor);
+    border-radius: 50%;
+    transform: translate(-21px, -6px);
+}
+.progress .mini li:not(:first-child)::before{
+    border-color: darkgray;
+}
+.progress .mini li:not(:first-child){
+    color: darkgray;
+}
+/* End of progressBar  */
+/* Start of optionsections*/
+

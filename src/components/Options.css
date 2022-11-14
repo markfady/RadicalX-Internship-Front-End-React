@@ -1,0 +1,38 @@
+@import url(../index.css);
+.options{
+    max-width: 500px;
+    position: relative;
+}
+.after svg{
+    color: var(--secondarycolor) !important;
+} 
+.option-parent{
+    max-width: 500px;
+}
+.option-details{
+    display: flex;
+}
+.option-details svg:first-child{
+    transform: translate(0px, 17px);
+}
+.option-details svg{
+    font-size: 18px;
+    margin-right: 17px;
+}
+.option-details svg:last-child{
+    color: darkgray;
+    transform: translate(0px, 5px);
+}
+.option-text{
+    display: flex;
+    border: 1px solid rgb(0 0 0 /16%);
+    width: 500px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 6px;
+    border-radius: 5%;
+    transition: 0.3s;
+}
+.option-text:hover{
+    border-color: var(--secondarycolor);
+}
