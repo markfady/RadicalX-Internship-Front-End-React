@@ -86,10 +86,10 @@
     transform: translate(-21px, -6px);
 }
 .progress .mini li:not(:first-child)::before{
-    border-color: darkgray;
+    border-color: var(--greycolor);
 }
 .progress .mini li:not(:first-child){
-    color: darkgray;
+    color: var(--greycolor);
 }
 /* End of progressBar  */
 /* Start of optionsections*/

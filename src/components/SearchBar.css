@@ -1,15 +1,19 @@
 @import url(../index.css);
 .SearchBar{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+   
 }
-
 .SearchBar .Details .Title{
     font-size: 24px;
     font-weight: 500;
 }
 .searchinput{
-    padding: 9px 13px;
+    outline: none;
+    padding: 9px 30px;
     width: 63%;
-    border: 2px solid darkgray;
+    border: 2px solid var(--greycolor);
     border-radius: 3%;
     font-family:var(--mainfont);
     font-size: 16px;
@@ -19,7 +23,14 @@
 }
 
 .SearchBar svg {
-    color: darkgrey;
+    color: var(--greycolor);
+}
+#first-icon{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: 18px;
+    background-color: white;
 }
 #second-icon{
     position: absolute;
@@ -29,8 +40,10 @@
 }
 .bullets{
     gap: 14px;
+    display: flex;
 }
 .bullets-options{
+    display: flex;
     user-select: none;
     border: 1px solid var(--secondarycolor);
     border-radius: 15%;
@@ -46,4 +59,19 @@
     margin-top: 5px;
     margin-left: 4px;
     font-size: 14px;
+}
+
+/* Comment  custom styling */
+#subject{
+    height: 300px;
+    width: 1200px;
+    padding: 20px;
+    outline: none;
+}
+#subject::placeholder{
+    font-size: 16px;
+    font-family: var(--mainfont);
+    font-weight: 400;
+    letter-spacing: 0.3px;
+
 }

@@ -19,7 +19,7 @@ ul li button {
     color: var(--secondarycolor);
 }
 .default{
-    color: darkgrey;
+    color: var(--greycolor);
 }
 .nav-item{
     padding: 0px;

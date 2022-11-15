@@ -6,18 +6,19 @@ function SearchBar(props){   //This Dynamic file for Category,Location,Recommend
         <div className="Details"> 
     <p class="Title mb-5">{props.Title}</p>
     <div className="content">
-    <i className={props.first}></i>
+    <i id="first-icon" className={props.first}></i>
     <input className="searchinput" type="search" placeholder={props.details} />
     <i id="second-icon" className={props.second}></i>
     </div>
-    <div className="bullets d-flex mt-4 mx-2">
-        <div className="bullets-options d-flex">
-        <p>Technology</p>
-        <i class="fa-solid fa-xmark"></i>
+    {/* The next part is custom for Category tab so we take all it's value as props in the category part not in Location*/}
+    <div className={props.custom}>
+        <div className={props.customoption}>
+        <p>{props.minititle1}</p>
+        <i className={props.miniicon1}></i>
         </div>
-        <div className="bullets-options d-flex">
-        <p>Development</p>
-        <i class="fa-solid fa-xmark"></i>
+        <div className={props.customoption}>
+        <p>{props.minititle2}</p>
+        <i className={props.miniicon2}></i>
         </div>
     </div>
     </div>

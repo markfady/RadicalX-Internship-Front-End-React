@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
+import Comment from"./Comment"
 import "./Buttons.css";
 
  function Showhidetab() {
@@ -136,10 +137,16 @@ import "./Buttons.css";
                   : "tab-pane fade" //we can add show after fade to make it as default opened tab
               }
             >
-              <SearchBar    //Using SearchBarJS and sending props to it
+            <SearchBar    //Using SearchBarJS and sending props to it
               Title="Category"
               details="Search Category"
               second="fa-solid fa-magnifying-glass"
+              custom="bullets  mt-4 mx-2"  //Styles inside SearchBar.css
+              customoption="bullets-options"
+              minititle1="Technology"
+              miniicon1="fa-solid fa-xmark"
+              minititle2="Development"
+              miniicon2="fa-solid fa-xmark"
               />
             </div>
             {/* close tab 1*/}
@@ -150,7 +157,10 @@ import "./Buttons.css";
                 showtab === 2 ? "tab-pane fade show active" : "tab-pane fade"
               }
             >
-              <p>Description</p>
+              <Comment
+              Title="Description"
+              
+              />
             </div>
             {/* close tab 2*/}
 
@@ -160,7 +170,12 @@ import "./Buttons.css";
                 showtab === 3 ? "tab-pane fade show active" : "tab-pane fade"
               }
             >
-              <p>Location Content</p>
+            <SearchBar
+                Title="Location"
+                first="fa-solid fa-location-dot"
+                details="Select Location"
+                second="fa-solid fa-caret-down"
+              />
             </div>
             {/* close tab 3*/}
             {/* start tab 4*/}
@@ -199,7 +214,17 @@ import "./Buttons.css";
                 showtab === 7 ? "tab-pane fade show active" : "tab-pane fade"
               }
             >
-              <p>Recommended Roles Content</p>
+            <SearchBar    //Using SearchBarJS and sending props to it
+              Title="Recommended Roles"
+              details="Search Roles"
+              second="fa-solid fa-magnifying-glass"
+              custom="bullets  mt-4 mx-2"  //Styles inside SearchBar.css
+              customoption="bullets-options"
+              minititle1="FullStack Developer"
+              miniicon1="fa-solid fa-xmark"
+              minititle2="Backend Developer"
+              miniicon2="fa-solid fa-xmark"
+              />
             </div>
             {/* close tab 7*/}
 
