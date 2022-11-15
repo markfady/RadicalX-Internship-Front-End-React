@@ -32,7 +32,6 @@
 .active-sidebar{
     border: 1px solid #ef1cc0;
     color: var(--secondarycolor) !important;
-    border-radius: 14%;
     background-color: #f3e1ef;
     max-width: 162px !important;
 }

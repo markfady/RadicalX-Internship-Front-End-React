@@ -16,7 +16,7 @@ function SideBar(){
                     <i className="fa-regular fa-star fa-lg me-2"></i>
                     <li className="mb-3 ps-2">Apperenterships</li>
                     </div>
-                    <div className="options active-sidebar d-flex">
+                    <div className="options active-sidebar d-flex rounded-3">
                     <i className=" pt-2 fa-solid fa-book-open fa-lg me-2"></i>
                     <li className="mb-3 ps-2 pt-1 ">Internships</li>
                     </div>

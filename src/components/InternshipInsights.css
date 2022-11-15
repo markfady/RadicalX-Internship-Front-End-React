@@ -28,7 +28,6 @@
     margin-top: 9px;
   }
   .Main-section-option button{
-    border-radius: 13%;
     background-color: var(--secondarycolor);
     border: 1px solid transparent;
     margin-bottom: -3px;

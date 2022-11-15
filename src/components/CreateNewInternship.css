@@ -1,9 +1,6 @@
 @import url(../index.css);
  /* Start of Title section */
  .SecondPage{
-    width: 100%;
-    height: 100%;
-    position: fixed;
  }
 .NewIntern{
     width: 100%;
@@ -92,5 +89,27 @@
     color: var(--greycolor);
 }
 /* End of progressBar  */
-/* Start of optionsections*/
 
+.AddMore{
+        border: none;
+        color: var(--secondarycolor);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+}
+.AddMorebtn{
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed var(--secondarycolor);
+    margin-bottom: 50px;
+    margin-left: 44px;
+    padding: 15px 0px;
+}
+
+.AddMorebtn svg{
+    color: var(--secondarycolor);
+    font-size: 15px;
+    border: 1px solid var(--secondarycolor);
+}

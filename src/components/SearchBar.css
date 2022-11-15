@@ -9,12 +9,11 @@
     font-size: 24px;
     font-weight: 500;
 }
-.searchinput{
+#searchinput{
     outline: none;
-    padding: 9px 30px;
+    padding: 9px 42px;
     width: 63%;
-    border: 2px solid var(--greycolor);
-    border-radius: 3%;
+    border: 2px solid #cfcfcf;
     font-family:var(--mainfont);
     font-size: 16px;
     font-weight: 400;
@@ -25,7 +24,7 @@
 .SearchBar svg {
     color: var(--greycolor);
 }
-#first-icon{
+#first-icon , #secondForm-icon , #thirdForm-icon{
     position: absolute;
     margin-left: 10px;
     margin-top: 12px;
@@ -46,8 +45,7 @@
     display: flex;
     user-select: none;
     border: 1px solid var(--secondarycolor);
-    border-radius: 15%;
-    padding: 0px 15px;
+    padding: 6px 15px;
     background-color: #f3e1ef;
 }
 .bullets-options p{
@@ -73,5 +71,50 @@
     font-family: var(--mainfont);
     font-weight: 400;
     letter-spacing: 0.3px;
+}
+
+/* Style for dashed file upload  Intro Video*/
+.dashed{
+    border: 1px dashed #a8a4a4 !important;
+}
+.dashed +svg{
+margin-left: -500px !important;
+}
+
+/* Dashed miniicon for web&Links */
+#customoption1{
+    border: 2px dashed var(--secondarycolor) !important;
+
+    padding: 0px 30px !important;
+}
+#customoption1 svg{
+    position: absolute;
+    margin-left: -11px ;
+    padding: 0px;
+    color: var(--secondarycolor);
+}
+#customoption1 p{
+    transform: translateX(10px);
+}
+    /* Start Css of FORM.JS FILE */
+    .FormContentParent{
+        width: 47%;
+        display: grid;
+        grid-template-columns:repeat(auto-fill , minmax(351px,1fr));
+    }
+.FormContent{
+    padding-top: 20px;
+}
+.FormContent svg{
+    color: var(--secondarycolor);
+}
+
+#formlast input{
+    width: 164% !important;
+}
+#secondForm-icon svg{
+
+}
+#thirdForm-icon svg{
 
 }

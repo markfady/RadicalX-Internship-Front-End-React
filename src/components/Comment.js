@@ -7,10 +7,11 @@ function Comment(props){   //This Dynamic file for Category,Location,Recommended
     <p class="Title mb-5">{props.Title}</p>
     <div className="content">
     <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Description"></textarea>
+        <textarea className={props.borderstyle} id="subject" name="subject" placeholder="Description"></textarea>
       </div>
     </div>
     </div>
+    
 </div>
         </>
     )

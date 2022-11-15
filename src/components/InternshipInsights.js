@@ -29,7 +29,7 @@ function InternshipInsights(){
             <p className="Main-paragraph font-weight-bold">Internships</p>
         <div className="Main-section-option">
             <i className="fa-solid fa-plus Main-section-icon"></i>
-           <Link to="/CreateNewInternship"> <button>Create New Internship</button> </Link>
+           <Link to="/CreateNewInternship"> <button className="rounded">Create New Internship</button> </Link>
         </div>
         </div>
         <div className="Secondary-section mt-5 ms-5 d-flex">

@@ -44,7 +44,7 @@ function CreateNewInternship(){
             </div>
             {/* End of Title section */}
             {/* Start of progressBar */}
-            <div className="progress mt-5 mx-4 position-relative">
+            <div className="progress mt-5 mx-4 position-relative rounded-3">
                 <ul className="mini position-absolute ">
                     <li>
                         Internship Description
@@ -100,7 +100,12 @@ function CreateNewInternship(){
                 name="Web Links &Resources"
                 class="after"
                 />
-            
+                <div className="AddMorebtn rounded-3">
+                <button className="AddMore">
+                <i className="fa-solid fa-plus me-2 rounded-1"></i>Add More
+            </button>
+                </div>
+       
 
         </div>    
 

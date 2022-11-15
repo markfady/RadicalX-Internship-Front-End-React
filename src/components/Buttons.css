@@ -5,7 +5,7 @@
     left: 24%;
     top: 21%;
     flex-direction: column;
-    gap: 73px;
+    gap: 75px;
     z-index: 1;       
     /* when clicking on the buttons after putting them inside the box the click button is blocked so use zindex to make them clickable in this case */
 }

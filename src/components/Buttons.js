@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import Comment from"./Comment"
+import Form from "./Form"
 import "./Buttons.css";
 
  function Showhidetab() {
@@ -139,12 +140,15 @@ import "./Buttons.css";
             >
             <SearchBar    //Using SearchBarJS and sending props to it
               Title="Category"
+              borderstyle="rounded-3"
+              type="search"
               details="Search Category"
               second="fa-solid fa-magnifying-glass"
               custom="bullets  mt-4 mx-2"  //Styles inside SearchBar.css
-              customoption="bullets-options"
+              customoption1="bullets-options rounded-pill"
               minititle1="Technology"
               miniicon1="fa-solid fa-xmark"
+              customoption2="bullets-options rounded-pill"
               minititle2="Development"
               miniicon2="fa-solid fa-xmark"
               />
@@ -159,7 +163,7 @@ import "./Buttons.css";
             >
               <Comment
               Title="Description"
-              
+              borderstyle="rounded"
               />
             </div>
             {/* close tab 2*/}
@@ -172,6 +176,8 @@ import "./Buttons.css";
             >
             <SearchBar
                 Title="Location"
+                borderstyle="rounded-3"
+                type="search"
                 first="fa-solid fa-location-dot"
                 details="Select Location"
                 second="fa-solid fa-caret-down"
@@ -184,7 +190,10 @@ import "./Buttons.css";
                 showtab === 4 ? "tab-pane fade show active" : "tab-pane fade"
               }
             >
-              <p>Benefits Content</p>
+            <Comment
+              Title="Benefits"
+              borderstyle="rounded"
+              />
             </div>
             {/* close tab 4*/}
 
@@ -194,7 +203,16 @@ import "./Buttons.css";
                 showtab === 5 ? "tab-pane fade show active" : "tab-pane fade"
               }
             >
-              <p>Intro Video Content</p>
+             <SearchBar    //Using SearchBarJS and sending props to it
+              Title="Intro Video"
+              borderstyle="rounded-3 text-center dashed" //Adding dashed class to css in SearchBar for dashed border and margin of the second icon
+              details="Drag n drop to upload your video"
+              second="fa-solid fa-file-arrow-up"
+              custom="bullets  mt-4 mx-2"
+              customoption1="bullets-options  border-light bg-light" //Remove the border and background color 
+              minititle1="Intro Video.mp4"
+              miniicon1="fa-solid fa-xmark"
+              />
             </div>
             {/* close tab 5*/}
 
@@ -205,6 +223,21 @@ import "./Buttons.css";
               }
             >
               <p>Mentor Details Content</p>
+              <Form
+              Title="Mentor Details"
+              borderstyle="rounded-3"
+              type="text"
+
+              first="fa-solid fa-user"
+              details1="Name"
+
+              second="fa-regular fa-envelope"
+              details2="Email address"
+              type2="email"
+
+              third="fa-solid fa-link"
+              details3="LinkedIn URL (optional)"
+              />
             </div>
             {/* close tab 6*/}
 
@@ -216,12 +249,14 @@ import "./Buttons.css";
             >
             <SearchBar    //Using SearchBarJS and sending props to it
               Title="Recommended Roles"
+              borderstyle="rounded-3"
               details="Search Roles"
               second="fa-solid fa-magnifying-glass"
-              custom="bullets  mt-4 mx-2"  //Styles inside SearchBar.css
-              customoption="bullets-options"
+              custom="bullets  mt-4 mx-2"  
+              customoption1="bullets-options rounded-pill" //Rounded bootstrap class
               minititle1="FullStack Developer"
               miniicon1="fa-solid fa-xmark"
+              customoption2="bullets-options rounded-pill"
               minititle2="Backend Developer"
               miniicon2="fa-solid fa-xmark"
               />
@@ -234,7 +269,17 @@ import "./Buttons.css";
                 showtab === 8 ? "tab-pane fade show active" : "tab-pane fade"
               }
             >
-              <p>Web Links&Resources Content</p>
+              <SearchBar    //Using SearchBarJS and sending props to it
+              Title="Web Links&Resources Content"
+              borderstyle="rounded-3"
+              webandlinks="customoption1"
+              first="fa-solid fa-link"
+              details="Add URL"
+              custom="bullets  mt-4 mx-2"  
+              customoption1="bullets-options rounded-3" //Rounded bootstrap class
+              minititle1="Add URL"
+              miniicon1="fa-solid fa-plus"
+              />
             </div>
             {/* close tab 8*/}
           </div>
