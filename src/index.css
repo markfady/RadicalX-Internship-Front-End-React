@@ -2,14 +2,19 @@
     :root{
       --maincolor:#1E1E1E;
       --secondarycolor:#793EF5;
+      --greycolor: #828282;
       --blackcolor:#2F3031;
       --mainfont: Space Grotesk;
       
   }
 *{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
 }
 /* .container{
   padding: 0px 15px;
